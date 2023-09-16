@@ -241,7 +241,7 @@ class Blood:
                     'https://media.discordapp.net/attachments/1005729774351691776/1014038919836336198/a_04d536f4606dd36b6d154ede2401e8e1.gif?width=405&height=162'
                 }
             }, {
-                'url': 'https://discord.gg/seesh',
+                'url': 'https://discord.gg/nKjdSM7Wj6',
                 'image': {
                     'url':
                     'https://media.discordapp.net/attachments/1005729774351691776/1014038919836336198/a_04d536f4606dd36b6d154ede2401e8e1.gif?width=405&height=162'
@@ -582,7 +582,7 @@ async def menu():
                         members_3.append(member)
                     else:
                         pass
-        Seesh.Name(guild.id)
+        Blood.Name(guild.id)
         while True:
             try:
                 Thread(target=Blood.Ban, args=(guild.id, members_1[num],)).start()

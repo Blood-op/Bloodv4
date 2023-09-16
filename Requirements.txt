@@ -1,5 +1,0 @@
-aiohttp
-colorama
-pystyle
-requests
-urllib3

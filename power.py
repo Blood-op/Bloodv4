@@ -145,7 +145,7 @@ async def channelids(guildID):
             channelcount += 1
             f.write(str(channel.id) + "\n")
         print(f"\x1b[38;5;213m[\033[37m!\x1b[38;5;213m]\033[37m Scraped \x1b[38;5;213m{channelcount}\033[37m Channels")    
-class Seesh:
+class Blood:
 
     def Name(guild):
         try:
@@ -310,8 +310,8 @@ class Seesh:
             if r.status_code == 200 or r.status_code == 201 or r.status_code == 204:
                 print(f"\x1b[38;5;213m[\033[37m+\x1b[38;5;213m]\033[37m Created Channel\x1b[38;5;113m {json['name']}\x1b[38;5;15")
                 if spam == True:
-                    webhook = Seesh.CreateWebhook(r.json()['id'])
-                    Thread(target=Seesh.SendWebhook, args=(webhook,)).start()
+                    webhook = Blood.CreateWebhook(r.json()['id'])
+                    Thread(target=Blood.SendWebhook, args=(webhook,)).start()
             else:
                 print(f"\x1b[38;5;213m[\033[37m-\x1b[38;5;213m]\033[37m Couldn't Create Channel\x1b{Fore.LIGHTRED_EX} {json['name']}\x1b[38;5;15")
         except:
@@ -517,7 +517,7 @@ async def menu():
 
         while True:
             try:
-                Thread(target=Seesh.DelChannel, args=(guild.id, channels[cnum],)).start()
+                Thread(target=Blood.DelChannel, args=(guild.id, channels[cnum],)).start()
                 cnum += 1
             except IndexError:
                 break

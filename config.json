@@ -1,0 +1,10 @@
+{
+    "TOKEN": "YOUR_TOKEN_HERE",
+    "SPAM_PRN": false,
+    "AMMOUNT_OF_CHANNELS": 100,
+    "MESSAGES_PER_CHANNEL": 100,
+    "MESSAGE": "@everyone https://discord.gg/nKjdSM7Wj6",
+    "CHANNEL_NAMES": "Ripped by cr",
+    "SERVER_NAME": "FUCKED BY CR",
+    "REST_TIME": 0.1
+}
